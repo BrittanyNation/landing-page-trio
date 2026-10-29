@@ -71,21 +71,45 @@
         <h3>Starter</h3>
         <p class="amount">$4<small> / person / month</small></p>
         <ul><li>Up to 15 teammates</li><li>One location</li><li>Shift swaps &amp; time-off</li><li>Email support</li></ul>
-        <a class="btn btn-ghost" href="#faq">Start Starter free</a>
+        <a class="btn btn-ghost" href="#signup" data-plan="starter">Start Starter free</a>
       </article>
       <article class="price-card featured">
         <p class="badge">Most popular</p>
         <h3>Team</h3>
         <p class="amount">$8<small> / person / month</small></p>
         <ul><li>Unlimited teammates</li><li>Up to 5 locations</li><li>Coverage auto-fill</li><li>Labor cost forecasting</li><li>Priority support</li></ul>
-        <a class="btn btn-primary" href="#faq">Start Team free</a>
+        <a class="btn btn-primary" href="#signup" data-plan="team">Start Team free</a>
       </article>
       <article class="price-card">
         <h3>Operations</h3>
         <p class="amount">$14<small> / person / month</small></p>
         <ul><li>Unlimited locations</li><li>Advanced permissions</li><li>Payroll exports</li><li>Dedicated success manager</li></ul>
-        <a class="btn btn-ghost" href="#faq">Talk to sales</a>
+        <a class="btn btn-ghost" href="#signup" data-plan="ops">Start Operations free</a>
       </article>
+    </div>
+  </div>
+</section>
+
+<section class="trial" id="signup" aria-labelledby="signup-h">
+  <div class="wrap">
+    <div class="section-head center">
+      <h2 id="signup-h">Start your free trial</h2>
+      <p>14 days free, no card required. The price after the trial updates as you choose.</p>
+    </div>
+    <form class="trial-widget" id="trial-form" novalidate>
+      <div class="ow-row">
+        <label>Plan<select id="s-plan"><option value="starter">Starter — $4 / person / month</option><option value="team" selected>Team — $8 / person / month</option><option value="ops">Operations — $14 / person / month</option></select></label>
+        <label>Team size (people)<input id="s-seats" type="number" min="1" max="500" value="5"></label>
+      </div>
+      <label>Work email<input id="s-email" type="email" autocomplete="email" placeholder="you@company.com"></label>
+      <p class="ow-total">After the trial: <strong id="s-total">$40 / month</strong></p>
+      <button class="btn btn-primary" type="submit" id="s-btn">Start Team free for 14 days</button>
+      <p class="ow-note">Demo form for a fictional product — nothing is created or sent.</p>
+    </form>
+    <div class="trial-widget" id="s-confirmation" hidden>
+      <h3 style="margin-top:0">Trial requested.</h3>
+      <p id="s-conf-detail"></p>
+      <p class="ow-note">Demo only — no real trial was started.</p>
     </div>
   </div>
 </section>
@@ -130,5 +154,6 @@ document.querySelectorAll('.faq-q').forEach(function(btn){
   });
 });
 </script>
+<script src="trio.js"></script>
 </body>
 </html>
