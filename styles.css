@@ -183,3 +183,17 @@ blockquote.testimonial footer{margin-top:1.25rem;font-size:.95rem;color:#c7c2e8}
 .day strong{color:#fff}
 .event .faq-item{border:1px solid #33334a;background:#12121f;margin-bottom:.7rem}
 .event footer.site{border-top:1px solid #33334a;padding:2.5rem 0;color:#a5a5bd;font-family:system-ui,sans-serif;font-size:.92rem}
+
+/* --- Working-widget additions (trio order / trial forms) --- */
+.order-widget,.trial-widget{max-width:640px;margin:2rem auto 0;text-align:left;border-radius:12px;padding:1.5rem}
+.event .order-widget{background:#14142b;border:1px solid #2dd4bf;color:#e8e8f2}
+.trial-widget{background:#fff;border:1px solid #e2e2f0;color:#1c1c28}
+.ow-row{display:flex;gap:1rem;flex-wrap:wrap}
+.ow-row label{flex:1;min-width:200px}
+.order-widget label,.trial-widget label{display:block;font-family:system-ui,sans-serif;font-weight:600;font-size:.9rem;margin:.6rem 0}
+.order-widget input,.order-widget select,.trial-widget input,.trial-widget select{display:block;width:100%;margin-top:.3rem;padding:.6rem;border-radius:8px;border:1px solid #9a9ab0;font:inherit;background:#fff;color:#1c1c28}
+.ow-total{font-family:system-ui,sans-serif;margin:1rem 0}
+.ow-note{font-family:system-ui,sans-serif;font-size:.85rem;opacity:.75;margin-bottom:0}
+.order-widget .invalid,.trial-widget .invalid{border-color:#f0f !important;outline:2px solid #f0f}
+.trial-widget .invalid{border-color:#4f46e5 !important;outline-color:#4f46e5}
+[hidden]{display:none !important}
